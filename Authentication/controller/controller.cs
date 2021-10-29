@@ -15,7 +15,8 @@ namespace Authentication.controller
             JWTAuthentication JWTAuthentication = new JWTAuthentication(jwt);
             EyesmediaAuthenticationProvider EyesmediaAuthenticationProvider = new EyesmediaAuthenticationProvider();
             MobiiUserDetailsProvider MobiiUserDetailsProvider = new MobiiUserDetailsProvider();
-            AuthenticationManager AuthenticationManager = new AuthenticationManager(EyesmediaAuthenticationProvider, MobiiUserDetailsProvider);            
+            AuthenticationManager AuthenticationManager = new AuthenticationManager(EyesmediaAuthenticationProvider, MobiiUserDetailsProvider);
+            
             AuthenticationManager.Authentications(new Authentications());
         }
     }
